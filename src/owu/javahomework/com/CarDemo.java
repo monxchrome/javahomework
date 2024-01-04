@@ -2,7 +2,7 @@ package owu.javahomework.com;
 
 public class CarDemo {
     public static void main(String[] args) {
-        Object[] objectArray = new Object[5];
+        Car[] carArray = new Car[5];
 
         Car car = new Car("BMW M5", 220, 400, false);
         Car car2 = new Car("Mercedes GLE", 240, 450, false);
@@ -12,13 +12,13 @@ public class CarDemo {
 
         car.setPower(225);
 
-        objectArray[0] = car;
-        objectArray[1] = car2;
-        objectArray[2] = car3;
-        objectArray[3] = car4;
-        objectArray[4] = car5;
+        carArray[0] = car;
+        carArray[1] = car2;
+        carArray[2] = car3;
+        carArray[3] = car4;
+        carArray[4] = car5;
 
-        for (Object o : objectArray) {
+        for (Object o : carArray) {
             System.out.println(o);
         }
     }

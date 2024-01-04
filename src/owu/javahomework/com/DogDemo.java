@@ -2,7 +2,7 @@ package owu.javahomework.com;
 
 public class DogDemo {
     public static void main(String[] args) {
-        Object[] arrayObject = new Object[5];
+        Dog[] dogObject = new Dog[5];
 
         Dog dog = new Dog("Bobik", 3, "Ovcharka");
         Dog dog2 = new Dog("Homik", 2, "Homyak");
@@ -14,13 +14,13 @@ public class DogDemo {
         dog.setAge(4);
         dog.setBreed("Jack Russell Terrier");
 
-        arrayObject[0] = dog;
-        arrayObject[1] = dog2;
-        arrayObject[2] = dog3;
-        arrayObject[3] = dog4;
-        arrayObject[4] = dog5;
+        dogObject[0] = dog;
+        dogObject[1] = dog2;
+        dogObject[2] = dog3;
+        dogObject[3] = dog4;
+        dogObject[4] = dog5;
 
-        for (Object o : arrayObject) {
+        for (Object o : dogObject) {
             System.out.println(o);
         }
     }

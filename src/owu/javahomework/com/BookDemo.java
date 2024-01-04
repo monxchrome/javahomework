@@ -2,7 +2,8 @@ package owu.javahomework.com;
 
 public class BookDemo {
     public static void main(String[] args) {
-        Object[] objectArray = new Object[5];
+        Book[] bookArray = new Book[5];
+
         Book book = new Book("Harry Potter", 4101, new String[]{"Joanne Rowling"}, "Novell");
         Book book2 = new Book("Lord of the Rings", 1120, new String[]{"J. Talkin"}, "Adventures");
         Book book3 = new Book("1984", 300, new String[]{"George Orwell"}, "Dystopia");
@@ -21,13 +22,13 @@ public class BookDemo {
 
         book.setGenre("Fantasy");
 
-        objectArray[0] = book;
-        objectArray[1] = book2;
-        objectArray[2] = book3;
-        objectArray[3] = book4;
-        objectArray[4] = book5;
+        bookArray[0] = book;
+        bookArray[1] = book2;
+        bookArray[2] = book3;
+        bookArray[3] = book4;
+        bookArray[4] = book5;
 
-        for (Object o : objectArray) {
+        for (Object o : bookArray) {
             System.out.println(o);
         }
     }
