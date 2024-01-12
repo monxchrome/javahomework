@@ -4,12 +4,12 @@ import lombok.Data;
 import owu.javahomework.com.interfaces.Printable;
 
 @Data
-public class Book implements Printable {
+public class Magazine implements Printable {
 
     private final String title;
 
     @Override
     public void print() {
-        System.out.println("Book name: " + title);;
+        System.out.println("Magazine name: " + title);;
     }
 }
